@@ -1,0 +1,521 @@
+@font-face {
+    font-family: main;
+    src: url(HelveticaLight.ttf) format("truetype");
+}
+
+body{
+
+    margin: 0px;
+    font-family: main;
+}
+
+*{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.body-wrapper{
+    width: 960px;
+    background-color: #f5f6f9;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #656b73;
+}
+
+.logo-wrapper{
+    display: flex;
+}
+
+.logo-ded{
+    margin: 5.5px;
+}
+
+.title-title-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title-upper{
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.title-lower{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.menu-header-wrapper{
+    margin: 0px;
+    width: 496px;
+    font-size: 14px;
+    height: inherit;
+}
+
+.menu-header-list{
+    height: inherit;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.menu-header-sub-list{
+    position: absolute;
+    display: none;
+    padding: 0px;
+    background-color: #656b73;
+    font-size: 12px;
+    width: 132px;
+
+}
+.menu-header-sub-list > li{
+    position: relative;
+    display: list-item;
+    margin: 8px;
+}
+.menu-header-list li:hover > ul{
+    display: inherit;
+}
+.menu-header-sub-list > li:hover{
+
+    text-decoration: underline;
+}
+
+.search-wrapper{
+
+    width: 188px;
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper form{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input[name="search-top-box"]{
+    font-family: main;
+    font-size: 14px;
+    outline: none;
+    color: black;
+    height: 20px;
+    width: 150px;
+    background-color: #c9cecd;
+    border: none;
+}
+
+input[name="submit-top-button"]{
+    outline: none;
+    margin-right: 5px;
+}
+
+
+main{
+    margin: 10px;
+}
+.under-header{
+    display: flex;
+}
+
+
+
+.slider-wrapper{
+    background-color: #dfdadf;
+    margin: 10px;
+    height: 360px;
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.slider{
+    margin: 20px 0px 0px 0px;
+    order: 2;
+    height: 319px;
+    width: 642px;
+}
+
+.slider-item-1{
+    height: inherit;
+    width: inherit;
+    background-image: url(../images/slider/slide-first-m.png);
+}
+
+.slider-item-1 p{
+    visibility: hidden;
+    margin: 0px;
+}
+
+.slider-item-1 h2{
+    position: relative;
+    top: 195px;
+    white-space: pre-line;
+    text-align: left;
+    font-size: 30px;
+    margin: 0 0 0 13px;
+}
+
+.slider-item{
+    display: none;
+}
+
+.arrow{
+    margin: auto 0;
+    width: 20px;
+
+}
+.slider-left-arrow{
+    order: 1;
+}
+
+.slider-right-arrow{
+    order: 3;
+    width: 20px;
+}
+.buttons{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    order: 4;
+    /*display: none;*/
+}
+.buttons span{
+    margin: 3.5px;
+    background-color: #cdc9cf;
+    width: 55px;
+    height: 7px;
+}
+
+.buttons span:first-child{
+    background-color: #aeaeb4;
+}
+
+.aside-wrapper{
+    height: 360px;
+    width: 150px;
+    margin: 10px;
+    background-color: #dfdadf;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-item{
+    background-color: #d1c7cd;
+    margin: 10px;
+    width: 130px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.aside-left-bar-photo{
+    width: 106px;
+    height: 70px;
+    margin: 10px 10px 0px 10px;
+
+}
+
+.aside-text a{
+    font-size: 12px;
+    color: #656b73;
+}
+
+.aside-item:hover .aside-left-bar-photo{
+    transition: 0.3s;
+    margin: 8px 8px 0px 8px;
+    width: 110px;
+    height: 72px;
+}
+.aside-item:hover .aside-text a{
+    font-size: 11px;
+    transition: 0.3s;
+}
+.banner-wrapper{
+    margin: 10px;
+    height: 340px;
+    background-color: #dfdadf;
+    display: flex;
+
+}
+
+.banner-background{
+    width: 900px;
+    height: 320px;
+    margin: 10px;
+    background-image: url("../images/banner/banner-fish-cut.jpg");
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.banner-main-text{
+    width: inherit;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.banner-side-text{
+    width: inherit;
+    font-size: 36px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.main-content-wrapper{
+    width: 920px;
+    margin: 20px 10px -17px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    background-color: #dfdadf;
+    width: 445px;
+    height: 324px;
+    margin-bottom: 30px;
+}
+
+.img p{
+    margin: 0px;
+}
+.img h3{
+    font-size: 36px;
+    text-align: center;
+    /*font-weight: bold;*/
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 425px;
+    height: 304px;
+    background-blend-mode: multiply;
+    justify-content: space-around;
+
+}
+.img1{
+    background-image: url(../images/main/img1.jpg);
+}
+
+.img2{
+    background-image: url(../images/main/img2.jpg);
+}
+
+.img3{
+    background-image: url(../images/main/img3.jpg);
+}
+
+.img4{
+    background-image: url(../images/main/img4.jpg);
+}
+
+.img5{
+    background-image: url(../images/main/img5.jpg);
+}
+
+.img6{
+    background-image: url(../images/main/img6.jpg);
+}
+
+.content-on-move{
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    transition: visibility 0s, opacity 0.6s linear;
+    visibility: hidden;
+}
+.col:hover .content-on-move{
+    opacity: 1;
+    visibility: visible;
+}
+
+.col:hover .img{
+    transition: 0.6s;
+    background-color: #7a7575;
+}
+
+.quote{
+    margin: 0px auto;
+    margin-bottom: 13px;
+    padding: 5px;
+    text-align: center;
+    width: 486px;
+    height: 111px;
+    background-color: #dfdadf;
+}
+
+.quote h1{
+    color: black;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.quote p, q{
+    color: black;
+    font-style: oblique;
+    font-size: 16px;
+}
+
+
+
+footer{
+    width: 960px;
+    height: 128px;
+}
+
+.duplicate-menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: #747980;
+    height: 30px;
+
+}
+
+.menu-footer{
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+.menu-footer-list{
+    width: 893px;
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+}
+
+.fish-logo{
+    width: inherit;
+}
+
+.footer-lower{
+    height: 98px;
+    background-color: #656b73;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts{
+    margin-left: 100px;
+    width: 165px;
+    align-items: center;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact
+{
+    font-size: 12px;
+    display: flex;
+}
+
+.contact p{
+    margin: 0px;
+}
+
+.contact img{
+    padding-right: 5px;
+}
+
+.withoutcopyright{
+    padding: 10px;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.copyright p{
+    margin: 0px;
+}
+.copyright{
+    display: flex;
+    font-size: 10px;
+}
+
+.mail-notifications-box
+{
+    margin: auto 0;
+    font-size: 12px;
+}
+
+.mail-notifications-box form{
+    width: 213px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.input-lower{
+    display: flex;
+}
+
+input[name="email-submit"]{
+    background-color: #c9cacd;
+    height: 31px;
+    width: 31px;
+    outline: none;
+    padding-right: 5px;
+}
+
+input[name="e"]
+{
+    color: black;
+    font-size: 14px;
+    outline: none;
+    width: 184px;
+    height: 29px;
+    background-color: #c9cacd;
+    border: none;
+}
+
+input[name="e"]::placeholder{
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: 12px;
+}
+
+.fisherman-colored-logo{
+    margin-top: 8px;
+    margin-left: 31px;
+    width: 89px;
+    height: 90px;
+    display: flex;
+}
